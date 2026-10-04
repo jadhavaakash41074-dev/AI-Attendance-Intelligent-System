@@ -1,0 +1,5 @@
+import streamlit as st
+
+def student_screen():
+    st.header("Welcome to Student Screen")
+    # Add student-specific functionality here
