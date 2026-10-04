@@ -31,12 +31,10 @@ def home_screen():
             }
     </style>
     """, unsafe_allow_html=True)
-
-    col1, col2 = st.columns(2)
     
 
     # Add home screen functionality here
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2,gap="large")
 
     with col1:
 
