@@ -39,70 +39,74 @@ def style_base_layout():
     st.markdown("""
         <style>
 
-             @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Outfit:wght@100..900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Outfit:wght@100..900&display=swap');
 
-              /* Hide Top bar of Streamlit */
+            /* Hide Top bar of Streamlit */
 
-              #MainMenu, footer, header{
-                  visibility : hidden;
-              }
+            #MainMenu, footer, header {
+                visibility: hidden;
+            }
 
-              .block-container{
-                   padding-top: 1.5rem !important;
-              }
+            .block-container {
+                padding-top: 1.5rem !important;
+            }
 
-              h1 {
-                    font-family : "Climate Crisis", sans-serif !important;
-                    font-size : 3.5rem !important;
-                    line-height : 1.1 !important;
-                    margin-bottom : 0rem !important;
-                    color : whitjust e !important;
-                }
+            h1 {
+                font-family: "Climate Crisis", sans-serif !important;
+                font-size: 3.5rem !important;
+                line-height: 1.1 !important;
+                margin-bottom: 0rem !important;
+                color: white !important;
+            }
 
             h2 {
-                font-family : "Climate Crisis", sans-serif !important;
-                font-size : 1.5rem !important;
-                line-height : 0.9 !important;
-                margin-bottom : 0rem !important;
-                color : black !important;
+                font-family: "Climate Crisis", sans-serif !important;
+                font-size: 1.8rem !important;
+                line-height: 0.9 !important;
+                margin-bottom: 0rem !important;
+                color: black !important;
             }
 
-            h3, p, h4{
-                   font-family : "Outfit", sans-serif !important;
+            h3, p, h4 {
+                font-family: "Outfit", sans-serif !important;
             }
 
-            button{
-                    border-radius : 1.5rem !important;
-                    background : rgb(213, 94, 195) !important;
-                    color : white !important;
-                    padding : 10px 20px !important;
-                    border : none !important;
-                    transition : transform 0.25s ease-in-out !important;
+            button[kind ="primary"]{
+                border-radius: 1.5rem !important;
+                background: #ec3c96 !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25s ease-in-out !important;
             }
 
-            button[kind="secondary"]{
-                    border-radius : 1.5rem !important;
-                    background : #EB459E !important;
-                    color : white !important;
-                    padding : 10px 20px !important;
-                    border : none !important;
-                    transition : transform 0.25s ease-in-out !important;
+            button[kind="secondary"] {
+                border-radius: 1.5rem !important;
+                background: #5B75F3 !important;
+                color: white !important;
+                padding: 12px 20px !important;
+                border: none !important;
+                transition: transform 0.25s ease-in-out !important;
             }
 
             button[kind="tertiary"] {
-                    border-radius : 1.5rem !important;
-                    background : black !important;
-                    color : white !important;
-                    padding : 10px 20px !important;
-                    border : none !important;
-                    transition : transform 0.25s ease-in-out !important;
+                border-radius: 1.5rem !important;
+                background: black !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25s ease-in-out !important;
             }
 
-            button:hover{
-                    transform : scale(1.05);
+            button:hover {
+                transform: scale(1.05);
+            }
+
+            /* Streamlit Divider */
+            [data-testid="stDivider"] {
+                border-top: 2px solid black !important;
             }
 
         </style>
 
-    """,  
-    unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
