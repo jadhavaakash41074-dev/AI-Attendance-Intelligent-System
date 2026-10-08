@@ -43,9 +43,9 @@ def style_base_layout():
 
             /* Hide Top bar of Streamlit */
 
-            #MainMenu, footer, header {
-                visibility: hidden;
-            }
+            # #MainMenu, footer, header {
+            #     visibility: hidden;
+            # }
 
             .block-container {
                 padding-top: 0rem !important;
@@ -73,7 +73,7 @@ def style_base_layout():
 
             button[kind ="primary"]{
                 border-radius: 1.5rem !important;
-                background: #ec3c96 !important;
+                background-color: #ec3c96 !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
@@ -85,7 +85,7 @@ def style_base_layout():
 
             button[kind="secondary"] {
                 border-radius: 1.5rem !important;
-                background: #5B75F3 !important;
+                background-color: #5B75F3 !important;
                 color: white !important;
                 padding: 12px 20px !important;
                 border: none !important;
@@ -97,7 +97,7 @@ def style_base_layout():
 
             button[kind="tertiary"] {
                 border-radius: 1.5rem !important;
-                background: black !important;
+                background-color: black !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
@@ -113,8 +113,15 @@ def style_base_layout():
 
             /* Streamlit Divider */
             [data-testid="stDivider"] {
-                border-top: 2px solid black !important;
+                width: 100% !important;
+                margin: 1rem 0 !important;
             }
+
+            [data-testid="stDivider"] > div {
+                border-top: 3px solid #000000 !important;
+                opacity: 1 !important;
+            }
+            
 
         </style>
 
