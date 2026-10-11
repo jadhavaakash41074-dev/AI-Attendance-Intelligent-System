@@ -1,3 +1,4 @@
+streamlit
 # basic numerica calcuation
 numpy
 pandas
@@ -18,7 +19,7 @@ segno
 # image preprocessing 
 pillow
 
-streamlit
+
 
 librosa
 resemblyzer
