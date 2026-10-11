@@ -60,7 +60,7 @@ def style_base_layout():
             h1 {
                 font-family: 'Climate Crisis', sans-serif !important;
                 font-size: 3.5rem !important;
-                line-height:1.1 1important;
+                line-height:1.1 !important;
                 margin-bottom:0rem !important;
             }
                 
@@ -106,6 +106,24 @@ def style_base_layout():
 
             button:hover{
                 transform :scale(1.05)}
+                            /* Text color fix (dark theme ke time bhi dark text) */
+            .stApp h1, .stApp h2, .stApp h3, .stApp h4,
+            .stApp label, .stApp p, .stApp span {
+                color: #1e293b !important;
+            }
+
+            /* Buttons ka text white hi rahe */
+            .stApp button p, .stApp button span {
+                color: white !important;
+            }
+
+            /* Input boxes light karne ke liye */
+            .stApp div[data-baseweb="input"],
+            .stApp div[data-baseweb="base-input"],
+            .stApp input {
+                background-color: white !important;
+                color: #1e293b !important;
+            }
         </style>  
 
                 """

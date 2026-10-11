@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+.venv/
+venv311/
+
+# Secrets
+.env
+.env.*
+.streamlit/*
+!.streamlit/config.toml
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Build files
+dist/
