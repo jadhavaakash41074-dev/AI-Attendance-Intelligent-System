@@ -1,7 +1,7 @@
 import streamlit as st
 
 def header_home():
-    logo_url = "https://snapclass-landing-page-theta.vercel.app/static/img/logo.png"
+    logo_url = "https://cdn-icons-png.flaticon.com/512/9587/9587711.png"
 
     st.markdown(f"""
             <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:15px; margin-top:15px">
@@ -12,7 +12,7 @@ def header_home():
 
 
 def header_dashboard():
-    logo_url = "https://snapclass-landing-page-theta.vercel.app/static/img/logo.png"
+    logo_url = "https://cdn-icons-png.flaticon.com/512/9587/9587711.png"
 
     st.markdown(f"""
         <style>
